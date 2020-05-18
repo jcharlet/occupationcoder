@@ -390,7 +390,7 @@ def return_best_match_2(dataframe_row):
     items = options.items
     for c in codes:
         if dataframe_row['title_nospace'] != '':
-            good_opt = extract(str(dataframe_row['title_nospace']), titles_mg[c])
+            good_opt = extract(str(dataframe_row['title_nospace']), titles_mg[str(c)])
             if good_opt[1] == 0:
                 options[c] = ('None', '0')
             else:
