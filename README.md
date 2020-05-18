@@ -25,6 +25,15 @@ A couple of the other packages, such as [```fuzzywuzzy```](https://github.com/se
 * ```occupationcoder/testvacancies``` contains 'test' vacancies to run the code on
 * ```occupationcoder/utilities``` contains helper functions which mostly manipulate strings
 
+### Setup python environment (with Conda)
+To be able to use this project, you will need python2 with the following libraries:
+```Terminal
+conda create -n py2min python=2 --no-default-packages
+conda activate py2min
+pip install jupyterlab
+python -m pip install  dask==0.15.0 pandas==0.20.2 "nltk>=3.4.5" fuzzywuzzy==0.15.1 scikit-learn==0.19.1 toolz cloudpickle scipy
+```
+
 ### Installation via terminal using pip
 Download the package and cd to the download directory. Then use
 ```Terminal
