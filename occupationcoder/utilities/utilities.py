@@ -129,9 +129,10 @@ def replace_punctuation(s):
     return s
 
 
-from HTMLParser import HTMLParser
+from html.parser import HTMLParser
 class MLStripper(HTMLParser):
     def __init__(self):
+        super().__init__()
         self.reset()
         self.fed = []
     def handle_data(self, d):
@@ -405,7 +406,7 @@ def ascii_convert(cols,dfIn):
     Function cleans ascii input and converts everything to strings in unicode
     """
     for col in cols:
-        dfIn[col] = dfIn[col].astype(unicode)
+        dfIn[col] = dfIn[col].astype(str)
         dfIn[col] = dfIn[col].apply(lambda x: x.encode('ascii', 'replace'))
         dfIn[col] = dfIn[col].astype(str)
     return dfIn
