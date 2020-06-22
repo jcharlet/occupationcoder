@@ -16,3 +16,9 @@ Outputs/
 
 # Python egg metadata, regenerated from source files by setuptools.
 /*.egg-info
+
+# Pycharm files
+.idea/
+
+# bin folder for various local scripts
+bin/

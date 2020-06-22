@@ -39,7 +39,7 @@ Download the package and cd to the download directory. Then use
 ```Terminal
 python setup.py sdist
 cd dist
-pip install occupationcoder-version.tar.gz
+pip install occupationcoder-0.1.tar.gz
 ```
 The first line creates the .tar.gz file, the second navigates to the directory with the packaged code in, and the third line installs the package. The version number to use will be evident from the name of the .tar.gz file.
 
